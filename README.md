@@ -1,8 +1,6 @@
 # workshop-online
 Aula para o workshop do dia 26/07/2020
 
-MARKDOWN PREVIEM ENHANCED
-
 # Plano da aula
 
 * O que é HTML + CSS e estrutura da pasta
