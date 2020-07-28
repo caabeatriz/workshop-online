@@ -75,6 +75,7 @@ Indo até ao h6, essa váriação é devida aos tamanhos
 
 E assim por diante...
 
+ADICIONAR TABELA DE ELEENTOS
 
 # HORA DE PROGRAMAR
 ![](img/yes.gif)
@@ -247,6 +248,122 @@ E nosso site vai tomando forma:
 
 ![](img/inicio.png)
 
+
+Agora vamos ajeitar primeiro essa tela, trocando as fontes para ficar igual nossa imagem inicial
+
+
+Usaremos a fonte **RALEWAY** e o jeito mais fácil de encontrar, é nesse site: https://fonts.google.com/
+
+Para adicionar uma fonte no site é necessário voltar ao html e inserir o link que selecionamos desse site:
+
+Insira o link copiado do site abaixo do link onde esta o css, observe:
+
+![](img/fontes.png)
+
+
+Agora voltaremos ao css para a segunda parte de adicionar:
+
+```css
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+```
+
+Colocamos a fonte **Raleway** e outras variantes dela que já existe no sistema, caso a raleway dÊ algum problema.
+
+Agora vamos aumentar o tamanho das letras, centralizar o texto e ajeitar o botão ''Conheça mais sobre mim''
+
+Vamos nomear a segunda div(caixinha) colocando uma classe:
+
+```html
+<div class="banner">
+    <div class="container">
+        <h1>Oi, eu sou Margaret Hamilton</h1>
+        <p>Conheça mais sobre mim</p>
+        <a>Veja mais sobre mim</a>
+    </div>
+</div>
+```
+E voltando ao arquivo **CSS** vamos dar estilos para essa classe:
+
+```CSS
+.container {
+    margin: 0 auto; /* Retira as margens padrão do html e centraliza */
+    margin-top: 10rem; /* Adiciona uma margin de cima com valor de 10 */
+}
+````
+
+Vá ao navegador e atualize a página, você verá que ela estará centralizada
+
+Agora, voltando ao html, vamos nomear os outros elementos:
+
+
+Adicionamos três classes, em três elementos
+> - class="banner__titulo"
+> - class="banner__subtitulo"
+> - class="btn btn-branco"
+
+```html
+<div class="banner">
+    <div class="container">
+        <h1 class="banner__titulo ">Oi, eu sou Margaret Hamilton</h1>
+        <p class="banner__subtitulo ">Conheça mais sobre mim</p>
+        <a class="btn btn-branco">Veja mais sobre mim</a>
+    </div>
+</div>
+```
+
+E vamos dar estilos para essas classes no **ARQUIVO CSS**
+
+```css
+ .banner__titulo {
+    font-size: 5rem;  /* Adiciona um tamanho a fonte com respectivo valor  */
+}
+
+.banner__subtitulo {
+    font-size: 2.3rem; /* Adiciona um tamanho a fonte com respectivo valor  */
+}
+
+/* BOTAO */
+.btn {  
+    border-radius: 3rem; /* Adiciona uma borda com espessura de 3rem */
+    text-transform: uppercase; /* Trasforma o texto em caixa alta  */
+    padding: 1rem 2rem;  /*Trasforma o texto em caixa alta  */
+    font-size: 1.5rem;  /* Adiciona um tamanho a fonte com respectivo valor */
+    font-weight: bold;  /* Transforma o texto em negrito */
+}
+
+.btn-branco {
+    color: #7E459B; /*Adiciona uma cor a fonte do botão */
+    background-color: white; /* Adiciona uma cor ao fundo do botão */
+} 
+```
+#### E vocês devem pensar, porque duas classes no botão ? 
+>Porque a classe **btn** seria como uma classe padrão que irá ser utilizada em outros botões, mas como temos botões de cores diferentes criamos a **btn-branco**
+
+Volte ao navegador(Google ou o seu navegador padrão) e atualize a página (F5). Se tudo deu certo até agora, sua página deve estar mais ou menos assim:
+
+![](img/banner-centralizado.png)
+
+Podemos observar que no botão tem um risco embaixo, essa característica é devido a todo link receber esse tracinho. Ele é possível ser retirar no css, então, para ficar mais bonitinho:
+
+Vamos pegar o elemento que simboliza o link **a** e a propriedade que retira esse tracinho:  
+
+Volte ao **arquivo CSS** e adicione
+
+```css
+a {
+    text-decoration: none;
+} 
+```
+
+## Seguimos para parte 2, montando a segunda parte da página.
+
+![](img/parte2.png)
+
+....
 
 
 
